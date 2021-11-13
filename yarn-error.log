@@ -1,0 +1,40 @@
+Arguments: 
+  /usr/bin/node /snap/node/5534/bin/yarn.js config get registry
+
+PATH: 
+  /tmp/yarn--1636724444009-0.991838912579009:/home/omarhaida/.config/yarn/global/node_modules/.bin:/home/omarhaida/.config/yarn/link/node_modules/.bin:/usr/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/lib/node_modules/npm/bin/node-gyp-bin:/usr/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/omarhaida/Android/Sdk/emulator:/home/omarhaida/Android/Sdk/tools:/home/omarhaida/Android/Sdk/tools/bin:/home/omarhaida/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.18.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ../../package.json: EACCES: permission denied, write
+      at writeSync (fs.js:736:3)
+      at SyncWriteStream._write (internal/fs/sync_write_stream.js:24:3)
+      at writeOrBuffer (internal/streams/writable.js:358:12)
+      at SyncWriteStream.Writable.write (internal/streams/writable.js:303:10)
+      at ConsoleReporter.warn (/snap/node/5534/lib/cli.js:96928:17)
+      at warn (/snap/node/5534/lib/cli.js:51701:23)
+      at module.exports.exports.default (/snap/node/5534/lib/cli.js:37401:7)
+      at /snap/node/5534/lib/cli.js:51712:51
+      at Generator.next (<anonymous>)
+      at step (/snap/node/5534/lib/cli.js:310:30)
+
+npm manifest: 
+  {
+    "name": "modern",
+    "version": "0.1.0",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
